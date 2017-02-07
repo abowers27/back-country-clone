@@ -24,7 +24,7 @@ gulp.task('build-css', function() {
         .pipe(cachebust.resources())
         .pipe(concat('styles.css'))
         .pipe(sourcemaps.write('./maps'))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./public/dist'));
 })
 
 gulp.task('build-js', function() {
@@ -35,7 +35,7 @@ gulp.task('build-js', function() {
       .pipe(concat('bundle.js'))
       //.pipe(uglify())
       .pipe(sourcemaps.write('./')) 
-      .pipe(gulp.dest('./dist/js')); 
+      .pipe(gulp.dest('./public/dist/js')); 
 });
 
 gulp.task('build', ['build-css', 'build-js'], function() {
