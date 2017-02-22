@@ -1,0 +1,86 @@
+<div class="one-brand">
+    <div class="upperr">
+        <img src="{{brand[0].brandimageurl}}">
+        <div class="top-upper">
+            <p>Best Sellers</p>
+            <p>New Arrivals</p>
+            <p>Shop All</p>
+        </div>
+        <hr>
+    </div>
+    <div class="main">
+        <div class="prods1">
+            <div class="best-sellers">
+                <h3>Best Sellers</h3>
+                <hr>
+                <p>Perennial Favorites From Every</p>
+                <p>Category</p>
+                <button class="best-btn">Shop All Best Sellers</button>
+            </div>
+            <div class="item">
+                <img src="{{brand[0].imageurl}}" >
+                <h4>{{brand[0].brand}}</h4>
+                <p>{{brand[0].name}}</p>
+                <h4>{{brand[0].price | currency}}</h4>
+            </div>
+            <div class="item">
+                <img src="{{brand[1].imageurl}}" >
+                <h4>{{brand[1].brand}}</h4>
+                <p>{{brand[1].name}}</p>
+                <h4>{{brand[1].price | currency}}</h4>
+            </div>
+            <div class="item">
+                <img src="{{brand[2].imageurl}}" >
+                <h4>{{brand[2].brand}}</h4>
+                <p>{{brand[2].name}}</p>
+                <h4>{{brand[2].price | currency}}</h4>
+            </div>
+        </div>
+        <div class="prods2">
+            <div class="item">
+                <img src="{{brand[3].imageurl}}" >
+                <h4>{{brand[3].brand}}</h4>
+                <p>{{brand[3].name}}</p>
+                <h4>{{brand[3].price | currency}}</h4>
+            </div>
+            <div class="item">
+                <img src="{{brand[4].imageurl}}" >
+                <h4>{{brand[4].brand}}</h4>
+                <p>{{brand[4].name}}</p>
+                <h4>{{brand[4].price | currency}}</h4>
+            </div>
+            <div class="item">
+                <img src="{{brand[5].imageurl}}" >
+                <h4>{{brand[5].brand}}</h4>
+                <p>{{brand[5].name}}</p>
+                <h4>{{brand[5].price | currency}}</h4>
+            </div>
+            <div class="item">
+                <img src="{{brand[6].imageurl}}" >
+                <h4>{{brand[6].brand}}</h4>
+                <p>{{brand[6].name}}</p>
+                <h4>{{brand[6].price | currency}}</h4>
+            </div>
+        </div>
+        <button class="allbtn">Shop All {{brand[0].brand}}</button>
+    </div>
+    <div class="lower-one">
+        <h2>About {{brand[0].brand}}</h2>
+        <h3>{{brand[0].info}}</h3>
+    </div>
+</div>
+
+<script>
+    $('.item').mouseover(function() {
+        $(this).css('height', '400px')
+        $(this).css('width', '26%')
+        $(this).css('border', '1px solid #bbb')
+        $(this).css('z-index', '10')
+    })
+     $('.item').mouseleave(function() {
+        $(this).css('height', '300px')
+        $(this).css('width', '23%')
+        $(this).css('border', 'none')
+        $(this).css('z-index', '9')
+    })
+</script>

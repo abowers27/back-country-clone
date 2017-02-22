@@ -18,7 +18,7 @@ var uglify = require('gulp-uglify');
 var cachebust = new CacheBuster();
 
 gulp.task('build-css', function() {
-    return gulp.src(['public/**/*.scss', '!public/dist/**/*.scss'])
+    return gulp.src(['public/app/**/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(cachebust.resources())
@@ -28,7 +28,7 @@ gulp.task('build-css', function() {
 })
 
 gulp.task('build-js', function() {
-   return gulp.src(['public/**/*.js', '!public/dist/**/*.js'])               
+   return gulp.src(['public/app/**/*.js'])               
       .pipe(sourcemaps.init())
       .pipe(print())                        
       .pipe(babel({ presets: ['es2015'] }))
@@ -41,7 +41,7 @@ gulp.task('build-js', function() {
 gulp.task('build', ['build-css', 'build-js']);
 
 gulp.task('watch', function() {
-    return gulp.watch(['./public/index.html', './public/**/*.*css', './public/js/**/*.js'], ['build']);
+    return gulp.watch(['./public/index.html', './public/app/**/*.scss', './public/app/**/*.js'], ['build']);
 });
 
 gulp.task('default', ['watch', 'build']);

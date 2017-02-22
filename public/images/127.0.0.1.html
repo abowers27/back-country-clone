@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:8080/#!/brands -->
+<html lang="en" ng-app="bcApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <title></title>
+        
+        <link href="./127.0.0.1_files/styles.css" rel="stylesheet">
+        <link href="./127.0.0.1_files/css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./127.0.0.1_files/slick.css">
+        <link rel="stylesheet" type="text/css" href="./127.0.0.1_files/slick-theme.css">
+    </head>
+    <body ng-controller="mainCtrl" class="ng-scope">
+
+        <navbar-dir><div class="nav-bar">
+   <div class="upper">
+       <img class="go-home" src="./127.0.0.1_files/image (3).PNG" ui-sref="home" href="#!/">
+       <div class="search">
+           <form class="search-inner ng-pristine ng-valid">
+               <button class="search-button"><img class="search-icon" src="./127.0.0.1_files/search.png"></button>
+               <input class="search-query" placeholder="Search gear &amp; clothing">
+           </form>
+       </div>
+       <div class="right">
+            <div class="chat">
+                <img class="chat-icon" src="./127.0.0.1_files/chat-icon.png">
+                <p>Chat</p>
+            </div>
+            <div class="phone-number">
+                <img class="phone" src="./127.0.0.1_files/phone-icon.png">
+                <p>1-800-409-4502</p>
+            </div>
+            <div class="account">
+                <p>My Account</p>
+                <img src="./127.0.0.1_files/user-icon.png" alt="">
+            </div>
+            <div class="shopping-cart">
+                <img src="./127.0.0.1_files/shopping-cart.png" alt="">
+            </div>
+       </div>
+   </div>
+   <div class="lower">
+        <div class="upper-lower">
+            <div class="dropdown-na">
+                <div class="na-btn">
+                    <p>New Arrivals</p>
+                </div>
+                <div class="new-arrivals">
+                    <div class="na-item">
+                        <h3>Women</h3>
+                        <p>Tops</p>
+                        <p>Pants</p>
+                        <p>Dresses &amp; Skirts</p>
+                        <p>Jackets</p>
+                        <p>Swimwear</p>
+                        <p>Accessories</p>
+                        <p>Footwear</p>
+                        <p>Shop All</p>
+                    </div>
+                    <div class="na-item">
+                        <h3>Men</h3>
+                        <p>Shirts</p>
+                        <p>Pants</p>
+                        <p>Shorts</p>
+                        <p>Hoodies &amp; Sweaters</p>
+                        <p>Jackets</p>
+                        <p>Accessories</p>
+                        <p>Footwear</p>
+                        <p>Shop All</p>
+                    </div>
+                    <div class="na-item">
+                        <h3>Gear</h3>
+                        <p>Ski</p>
+                        <p>Snowboard</p>
+                        <p>Hike &amp; Camp</p>
+                        <p>Climb</p>
+                        <p>Backpack</p>
+                        <p>Surf &amp; Paddle</p>
+                        <p>Fitness</p>
+                        <p>Accessories</p>
+                    </div>
+                    <div class="na-item">
+                        <h3>Brands</h3>
+                        <p>Rhone</p>
+                        <p>Parks Project</p>
+                        <p>Spot Satellite</p>
+                        <p>Tepui</p>
+                        <p>Totem Cams</p>
+                        <p>Vitamin A</p>
+                        <p>Trask</p>
+                    </div>
+             </div>
+        </div>
+            <div class="dropdown-br">
+                <div class="br-btn" ui-sref="allBrands" href="#!/brands">
+                    <p>Brands</p>
+                </div>
+                <div class="brands">
+                    <div class="top">
+                        <p>Shop Over A Thousand Brands</p>
+                    </div>
+                    <div class="bottom">
+                        <p>#</p>
+                        <p>A</p>
+                        <p>B</p>
+                        <p>C</p>
+                        <p>D</p>
+                        <p>E</p>
+                        <p>F</p>
+                        <p>G</p>
+                        <p>H</p>
+                        <p>I</p>
+                        <p>J</p>
+                        <p>K</p>
+                        <p>L</p>
+                        <p>M</p>
+                        <p>N</p>
+                        <p>O</p>
+                        <p>P</p>
+                        <p>Q</p>
+                        <p>R</p>
+                        <p>S</p>
+                        <p>T</p>
+                        <p>U</p>
+                        <p>V</p>
+                        <p>W</p>
+                        <p>X</p>
+                        <p>Y</p>
+                        <p>Z</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-act">
+                <div class="act-btn">
+                    <p>Activities</p>    
+                </div>
+            </div>
+            <div class="dropdown-wom">
+                <div class="wom-btn">
+                    <p>Women</p>
+                </div>
+                <div class="women">
+                    <div class="wom-item">
+                        <h3>Clothing</h3>
+                        <p>Jackets</p>
+                        <p>Tops</p>
+                        <p>Pants</p>
+                        <p>Shorts</p>
+                        <p>Dresses &amp; Skirts</p>
+                        <p>Baselayers</p>
+                        <p>Underwear</p>
+                        <p>Swimwear</p>
+                    </div>
+                    <div class="wom-item">
+                        <h3>Footwear</h3>
+                        <p>Boots</p>
+                        <p>Shoes</p>
+                        <p>Sandals</p>
+                        <p>Slippers</p>
+                        <p>Socks</p>
+                        <p>All</p>
+                    </div>
+                    <div class="wom-item">
+                        <h3>Accessories</h3>
+                        <p>Head &amp; Neck Wear</p>
+                        <p>Eyewear</p>
+                        <p>Gloves &amp; Mittens</p>
+                        <p>Electronics</p>
+                        <p>Watches</p>
+                        <p>Handbags</p>
+                        <p>Backpacks</p>
+                        <p>Blankets</p>
+                        <p>All</p>
+                    </div>
+                    <div class="wom-item">
+                        <h3>Shop By Activity</h3>
+                        <p>Ski</p>
+                        <p>Snowboard</p>
+                        <p>Fitness</p>
+                        <p>Climb</p>
+                        <p>Hike &amp; Camp</p>
+                        <p>Bike</p>
+                        <p>Run</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown-men">
+                <div class="men-btn">
+                    <p>Men</p>
+                </div>
+                <div class="men">
+                    <div class="men-item">
+                        <h3>Clothing</h3>
+                        <p>Jackets</p>
+                        <p>Hoodies &amp; Sweaters</p>
+                        <p>Shirts</p>
+                        <p>Pants</p>
+                        <p>Shorts</p>
+                        <p>Baselayers</p>
+                        <p>Underwear</p>
+                        <p>Swimwear</p>
+                    </div>
+                    <div class="men-item">
+                        <h3>Footwear</h3>
+                        <p>Boots</p>
+                        <p>Shoes</p>
+                        <p>Sandals</p>
+                        <p>Slippers</p>
+                        <p>Socks</p>
+                        <p>All</p>
+                    </div>
+                    <div class="men-item">
+                        <h3>Accessories</h3>
+                        <p>Head &amp; Neck Wear</p>
+                        <p>Eyewear</p>
+                        <p>Gloves &amp; Mittens</p>
+                        <p>Electronics</p>
+                        <p>Watches</p>
+                        <p>Backpacks &amp; Bags</p>
+                        <p>Blankets</p>
+                        <p>All</p>
+                    </div>
+                    <div class="men-item">
+                        <h3>Shop By Activity</h3>
+                        <p>Ski</p>
+                        <p>Snowboard</p>
+                        <p>Fitness</p>
+                        <p>Hike &amp; Camp</p>
+                        <p>Climb</p>
+                        <p>Run</p>
+                        <p>Fly Fish</p>
+                        <p>Bike</p>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="lower-item">
+                <p>Kids</p>
+            </div>
+            <div class="lower-item">
+                <p>Sale</p>
+            </div>-->
+        </div>
+        <div class="lower-lower" ng-hide="na || br">
+            <p>Free 2-Day Shipping on Orders Over $50*</p>
+        </div>
+   </div>
+</div>
+</navbar-dir>
+
+        
+      
+       <login-dir><div class="login">
+    <img class="exit" src="./127.0.0.1_files/x-icon.png">
+    <img class="logo" src="./127.0.0.1_files/image (4).PNG">
+    <form class="form ng-pristine ng-valid">
+        <input class="email" placeholder="email"><br>
+        <input class="password" placeholder="password"><br>
+        <div class="buttons">
+            <button class="signin">Sign In</button>
+            <button class="createacct">Create an Account</button>
+        </div>
+    </form>
+</div></login-dir>
+         
+       <create-account-dir><div class="create-user">
+    <img class="exit" src="./127.0.0.1_files/x-icon.png">
+    <img class="logo" src="./127.0.0.1_files/image (4).PNG">
+    <form class="form ng-pristine ng-valid">
+        <input class="item" placeholder="Your Name"><br>
+        <input class="item" placeholder="Email"><br>
+        <input class="item" placeholder="Password"><br>
+        <input class="item" placeholder="Retype Password"><br>
+        <div class="buttons">
+            <button class="create">Create Account</button>
+            <button class="signinpage">Sign In</button> 
+        </div>
+        
+    </form>
+</div></create-account-dir> 
+
+       
+        <!-- uiView: --><ui-view class="ng-scope"><div class="allBrands ng-scope">
+    <div class="top">
+        <h2>Shop All Brands</h2>
+        <div class="letters">
+            <p>#</p>
+            <p>A</p>
+            <p>B</p>
+            <p>C</p>
+            <p>D</p>
+            <p>E</p>
+            <p>F</p>
+            <p>G</p>
+            <p>H</p>
+            <p>I</p>
+            <p>J</p>
+            <p>K</p>
+            <p>L</p>
+            <p>M</p>
+            <p>N</p>
+            <p>O</p>
+            <p>P</p>
+            <p>Q</p>
+            <p>R</p>
+            <p>S</p>
+            <p>T</p>
+            <p>U</p>
+            <p>V</p>
+            <p>W</p>
+            <p>X</p>
+            <p>Y</p>
+            <p>Z</p>
+        </div>
+    </div>   
+    <div class="top-brands">
+        <div class="pic"><img src="./127.0.0.1_files/image (11).PNG"></div>
+        <div class="pic"><img src="./127.0.0.1_files/image (7).PNG"></div>
+        <div class="pic"><img src="./127.0.0.1_files/hardwear.JPG"></div>
+        <div class="pic"><img src="./127.0.0.1_files/prana.JPG"></div>
+        <div class="pic"><img src="./127.0.0.1_files/image (8).PNG"></div>
+        <div class="pic"><img src="./127.0.0.1_files/image (6).PNG"></div>
+    </div> 
+</div>
+</ui-view>
+
+
+        <script src="./127.0.0.1_files/jquery-3.1.1.js"></script>
+        <script type="text/javascript" src="./127.0.0.1_files/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="./127.0.0.1_files/slick.min.js"></script>
+        <script type="text/javascript" src="./127.0.0.1_files/jquery.dim-background.min.js"></script>
+
+        <script src="./127.0.0.1_files/angular.js"></script>
+        <script src="./127.0.0.1_files/angular-ui-router.js"></script>
+        <script src="./127.0.0.1_files/bundle.js"></script>
+   
+       
+
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
