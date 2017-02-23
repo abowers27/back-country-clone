@@ -13,6 +13,8 @@ app.get('/api/products', productCtrl.getProducts)
 
 app.get('/api/brands/:brandName', productCtrl.getBrand)
 
+app.get('/api/products/:productid', productCtrl.getOneProduct)
+
 
 
 

@@ -24,6 +24,17 @@ module.exports = {
                 res.send(results)
             }
         })
+    },
+    getOneProduct: function(req, res) {
+        db.product.read_product([req.params.productid],
+        function(err, results) {
+            if (err) {
+                console.error(err)
+                res.send(err)
+            } else {
+                res.send(results[0])
+            }
+        })
     }
 
 }

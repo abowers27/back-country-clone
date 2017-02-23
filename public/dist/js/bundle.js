@@ -16,6 +16,10 @@ angular.module('bcApp', ['ui.router']).config(function ($stateProvider, $urlRout
         url: '/oneBrand/:name',
         templateUrl: 'app/views/oneBrand/oneBrand-tmpl.html',
         controller: 'oneBrandCtrl'
+    }).state('oneProduct', {
+        url: '/oneProduct/:id',
+        templateUrl: 'app/views/oneProduct/oneProduct-tmpl.html',
+        controller: 'oneProductCtrl'
     });
 });
 'use strict';
@@ -45,33 +49,11 @@ angular.module('bcApp').service('mainSvc', function ($http) {
             return res.data;
         });
     };
-});
-'use strict';
 
-angular.module('bcApp').directive('createAccountDir', function () {
-
-    return {
-        restrict: 'EA',
-        templateUrl: './app/directives/create-account/create-account.html',
-        link: function link(scope, elem, attr) {
-
-            $('.createacct').click(function () {
-                $('.create-user').css('display', 'initial');
-                $('.create-user').dimBackground();
-                $('.login').css('display', 'none');
-            });
-            $('.exit').click(function () {
-                $('.create-user').undim();
-                $('.create-user').css('display', 'none');
-                $('.login').css('display', 'none'); // Note: We could also use `$.undim();`
-            });
-            $('.signinpage').click(function () {
-                $('.create-user').undim();
-                $('.create-user').css('display', 'none');
-                $('.login').css('display', 'initial');
-                $('.login').dimBackground();
-            });
-        }
+    this.getOneProduct = function (id) {
+        return $http.get('/api/products/' + id).then(function (res) {
+            return res.data;
+        });
     };
 });
 'use strict';
@@ -117,6 +99,34 @@ angular.module('bcApp').directive('loginDir', function () {
 });
 'use strict';
 
+angular.module('bcApp').directive('createAccountDir', function () {
+
+    return {
+        restrict: 'EA',
+        templateUrl: './app/directives/create-account/create-account.html',
+        link: function link(scope, elem, attr) {
+
+            $('.createacct').click(function () {
+                $('.create-user').css('display', 'initial');
+                $('.create-user').dimBackground();
+                $('.login').css('display', 'none');
+            });
+            $('.exit').click(function () {
+                $('.create-user').undim();
+                $('.create-user').css('display', 'none');
+                $('.login').css('display', 'none'); // Note: We could also use `$.undim();`
+            });
+            $('.signinpage').click(function () {
+                $('.create-user').undim();
+                $('.create-user').css('display', 'none');
+                $('.login').css('display', 'initial');
+                $('.login').dimBackground();
+            });
+        }
+    };
+});
+'use strict';
+
 angular.module('bcApp').directive('navbarDir', function () {
 
     return {
@@ -139,10 +149,10 @@ angular.module('bcApp').directive('navbarDir', function () {
 });
 'use strict';
 
-angular.module('bcApp').controller('homeCtrl', function ($scope) {});
+angular.module('bcApp').controller('brandsCtrl', function ($scope, mainSvc) {});
 'use strict';
 
-angular.module('bcApp').controller('brandsCtrl', function ($scope, mainSvc) {});
+angular.module('bcApp').controller('homeCtrl', function ($scope) {});
 'use strict';
 
 angular.module('bcApp').controller('oneBrandCtrl', function ($scope, $stateParams, mainSvc) {
@@ -151,11 +161,23 @@ angular.module('bcApp').controller('oneBrandCtrl', function ($scope, $stateParam
         var name = $stateParams.name;
         mainSvc.getBrand(name).then(function (res) {
 
-            console.log('res: ', res);
             $scope.brand = res;
         });
     };
     $scope.getBrand();
+});
+'use strict';
+
+angular.module('bcApp').controller('oneProductCtrl', function ($scope, $stateParams, mainSvc) {
+
+    $scope.getOneProduct = function () {
+        var id = $stateParams.id;
+        mainSvc.getOneProduct(id).then(function (res) {
+            $scope.oneProduct = res;
+            console.log('theone', res);
+        });
+    };
+    $scope.getOneProduct();
 });
 'use strict';
 

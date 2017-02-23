@@ -541,7 +541,8 @@
     * body .allBrands {
       width: 100%;
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      font-family: open sans; }
       * body .allBrands .top {
         position: relative;
         top: 140px;
@@ -656,6 +657,29 @@
           justify-content: space-around;
           align-items: center; }
           * body .allBrands .atoz .cdiv hr {
+            width: 95%;
+            height: 1px; }
+        * body .allBrands .atoz .cs {
+          width: 82%;
+          display: flex;
+          justify-content: space-around;
+          font-size: 12px; }
+          * body .allBrands .atoz .cs .sub {
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 320px; }
+            * body .allBrands .atoz .cs .sub p {
+              line-height: 1px; }
+              * body .allBrands .atoz .cs .sub p:hover {
+                cursor: pointer; }
+        * body .allBrands .atoz .ddiv {
+          width: 85%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          * body .allBrands .atoz .ddiv hr {
             width: 95%;
             height: 1px; }
     * body .one-brand {
@@ -783,5 +807,36 @@
         align-items: center;
         padding: 40px 150px;
         line-height: 35px; }
+    * body .one-product {
+      width: 100%; }
+      * body .one-product .upper-op {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 140px; }
+        * body .one-product .upper-op .image-op {
+          width: 70%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          * body .one-product .upper-op .image-op img {
+            width: 50%;
+            margin-top: 50px; }
+        * body .one-product .upper-op .info-op {
+          width: 30%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start; }
+          * body .one-product .upper-op .info-op img {
+            width: 120px; }
+          * body .one-product .upper-op .info-op h2 {
+            line-height: 1px; }
+          * body .one-product .upper-op .info-op h3 {
+            line-height: 1px; }
+          * body .one-product .upper-op .info-op p {
+            line-height: 0px;
+            font-size: 12px; }
 
 /*# sourceMappingURL=maps/styles.css.map */

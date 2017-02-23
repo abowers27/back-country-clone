@@ -19,5 +19,10 @@ angular.module('bcApp', ['ui.router'])
         templateUrl: 'app/views/oneBrand/oneBrand-tmpl.html',
         controller: 'oneBrandCtrl'
     })
+    .state('oneProduct', {
+        url: '/oneProduct/:id',
+        templateUrl: 'app/views/oneProduct/oneProduct-tmpl.html',
+        controller: 'oneProductCtrl'
+    })
     
 })

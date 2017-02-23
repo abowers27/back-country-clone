@@ -677,6 +677,7 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
+        font-family: open sans;
         .top {
             position: relative;
             top: 140px;
@@ -820,6 +821,38 @@ body {
                 }
             }
             .cdiv {
+                width: 85%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                hr {
+                    width: 95%;
+                    height: 1px;
+                }
+            }
+            .cs {
+                width: 82%;
+                display: flex;
+                justify-content: space-around;
+                font-size: 12px;
+
+                .sub {
+                    width: 17%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    height: 320px;
+                    
+                    p {
+                        line-height: 1px;
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .ddiv {
                 width: 85%;
                 display: flex;
                 justify-content: space-around;
@@ -985,6 +1018,46 @@ body {
             align-items: center;
             padding: 40px 150px;
             line-height: 35px;
+        }
+    }
+    .one-product {
+        width: 100%;
+        .upper-op {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+            top: 140px;
+            .image-op {
+                width: 70%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 50%;
+                    margin-top: 50px
+                }
+            }
+            .info-op {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                img {
+                    width: 120px;
+                }
+                h2 {
+                    line-height: 1px;
+                }
+                h3 {
+                    line-height: 1px;
+                }
+                p {
+                    line-height: 0px;
+                    font-size: 12px;
+                }
+            }
         }
     }
 }

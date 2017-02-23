@@ -13,5 +13,12 @@ angular.module('bcApp')
             return res.data;
         })
     }
+
+    this.getOneProduct = function(id) {
+        return $http.get('/api/products/' + id)
+        .then(function(res) {
+            return res.data;
+        })
+    }
     
 })
