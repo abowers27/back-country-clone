@@ -1,9 +1,9 @@
 angular.module('bcApp')
-.controller('oneBrandCtrl', function($scope, $stateParams, mainSvc) {
+.controller('oneBrandCtrl', function($scope, $stateParams, productSvc) {
     
     $scope.getBrand = function() {
         var name = $stateParams.name;
-        mainSvc.getBrand(name).then(function(res) {
+        productSvc.getBrand(name).then(function(res) {
         
             $scope.brand = res;
         })

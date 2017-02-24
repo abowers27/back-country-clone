@@ -1,5 +1,5 @@
 angular.module('bcApp')
-.service('mainSvc', function($http) {
+.service('productSvc', function($http) {
 
     this.getProducts = function() {
         return $http.get('/api/products').then(function(res) {
@@ -20,5 +20,7 @@ angular.module('bcApp')
             return res.data;
         })
     }
+
+   
     
 })

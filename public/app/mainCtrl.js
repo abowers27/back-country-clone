@@ -1,8 +1,8 @@
 angular.module('bcApp')
-.controller('mainCtrl', function($scope, mainSvc) {
+.controller('mainCtrl', function($scope, productSvc) {
 
     $scope.getProducts = function(){
-        mainSvc.getProducts().then(function(res) {
+        productSvc.getProducts().then(function(res) {
             console.log('prods: ', res);
             $scope.products = res;
         })

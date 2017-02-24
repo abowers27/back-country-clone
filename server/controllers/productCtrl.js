@@ -1,5 +1,4 @@
 var db = require('./../massive');
-console.log(db)
 
 
 module.exports = {

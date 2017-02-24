@@ -24,10 +24,10 @@ angular.module('bcApp', ['ui.router']).config(function ($stateProvider, $urlRout
 });
 'use strict';
 
-angular.module('bcApp').controller('mainCtrl', function ($scope, mainSvc) {
+angular.module('bcApp').controller('mainCtrl', function ($scope, productSvc) {
 
     $scope.getProducts = function () {
-        mainSvc.getProducts().then(function (res) {
+        productSvc.getProducts().then(function (res) {
             console.log('prods: ', res);
             $scope.products = res;
         });
@@ -36,7 +36,15 @@ angular.module('bcApp').controller('mainCtrl', function ($scope, mainSvc) {
 });
 'use strict';
 
-angular.module('bcApp').service('mainSvc', function ($http) {
+angular.module('bcApp').service('authSvc', function ($http) {
+
+    this.login = function () {
+        return $http.get('/auth');
+    };
+});
+'use strict';
+
+angular.module('bcApp').service('productSvc', function ($http) {
 
     this.getProducts = function () {
         return $http.get('/api/products').then(function (res) {
@@ -149,17 +157,17 @@ angular.module('bcApp').directive('navbarDir', function () {
 });
 'use strict';
 
-angular.module('bcApp').controller('brandsCtrl', function ($scope, mainSvc) {});
+angular.module('bcApp').controller('brandsCtrl', function ($scope, productSvc) {});
 'use strict';
 
 angular.module('bcApp').controller('homeCtrl', function ($scope) {});
 'use strict';
 
-angular.module('bcApp').controller('oneBrandCtrl', function ($scope, $stateParams, mainSvc) {
+angular.module('bcApp').controller('oneBrandCtrl', function ($scope, $stateParams, productSvc) {
 
     $scope.getBrand = function () {
         var name = $stateParams.name;
-        mainSvc.getBrand(name).then(function (res) {
+        productSvc.getBrand(name).then(function (res) {
 
             $scope.brand = res;
         });
@@ -168,11 +176,11 @@ angular.module('bcApp').controller('oneBrandCtrl', function ($scope, $stateParam
 });
 'use strict';
 
-angular.module('bcApp').controller('oneProductCtrl', function ($scope, $stateParams, mainSvc) {
+angular.module('bcApp').controller('oneProductCtrl', function ($scope, $stateParams, productSvc) {
 
     $scope.getOneProduct = function () {
         var id = $stateParams.id;
-        mainSvc.getOneProduct(id).then(function (res) {
+        productSvc.getOneProduct(id).then(function (res) {
             $scope.oneProduct = res;
             console.log('theone', res);
         });
