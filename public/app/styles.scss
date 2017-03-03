@@ -590,8 +590,7 @@
                         opacity: .6;
                         padding-left: 10px;
                         line-height: 1px;
-                        height: 80px;
-                        padding-top: 10px;     
+                        padding: 5px 0 5px 10px;     
                     }
                 }
                 .item2 {
@@ -613,8 +612,7 @@
                         opacity: .6;
                         padding-left: 10px;
                         line-height: 1px;
-                        height: 80px;
-                        padding-top: 10px;     
+                        padding: 5px 0 5px 10px;     
                     }
                 }
                 .item3 {
@@ -636,8 +634,7 @@
                         opacity: .6;
                         padding-left: 10px;
                         line-height: 1px;
-                        height: 80px;
-                        padding-top: 10px;      
+                        padding: 5px 0 5px 10px;      
                     }
                 }
             }
@@ -652,7 +649,7 @@
                 .item1 {
                     height: 100%;
                     background: url('./../images/image (4).JPG');
-                    width: 48%;
+                    width: 49%;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -665,14 +662,13 @@
                         opacity: .6;
                         padding-left: 10px;
                         line-height: 1px;
-                        height: 80px;
-                        padding-top: 10px;     
+                        padding: 5px 0 5px 10px;     
                     }
                 }
                 .item2 {
                     height: 100%;
                     background: url('./../images/image (7).JPG');
-                    width: 48%;
+                    width: 49%;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -684,7 +680,7 @@
                         color: white;
                         opacity: .6;
                         line-height: 1px;
-                        padding: auto 0 auto 10px;     
+                        padding: 5px 0 5px 10px;     
                     }
                 }
             }
@@ -702,15 +698,35 @@
                     width: 60%;
                     background-size: cover;
                     background-repeat: no-repeat;
-                    background-position: center center;   
+                    background-position: center center;
+                    display: flex;
+                    align-items: flex-end;
+                    .banner-hom {
+                        width: 100%;
+                        background-color: #333;
+                        color: white;
+                        opacity: .6;
+                        line-height: 1px;
+                        padding: 5px 0 5px 10px;     
+                    }   
                 }
                 .item2 {
                     height: 100%;
                     background: url('./../images/image (6).JPG');
-                    width: 36%;
+                    width: 38%;
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center center; 
+                    display: flex;
+                    align-items: flex-end;
+                    .banner-hom {
+                        width: 100%;
+                        background-color: #333;
+                        color: white;
+                        opacity: .6;
+                        line-height: 1px;
+                        padding: 5px 0 5px 10px;     
+                    }
                 }
             }
             .bottom {
@@ -724,11 +740,13 @@
             width: 100%;
             display: flex;
             flex-direction: column;
+            align-items: center;
             font-family: abel;
             position: relative;
             top: 140px;
             .top {
                 height: 350px;
+                width: 100%;
                 background: url('./../images/brands.JPG');
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -753,20 +771,20 @@
             }
             .top-brands {
                 display: flex;
-                justify-content: center;
+                justify-content: space-around;
                 align-items: center;
                 height: 6vh;
-                margin: 30px 0;
+                width: 1400px;
+                margin: 50px 0;
                 .pic {
-                    height: 100%;
-                    margin: 0 55px;
+                    width: 6%;
                     img {
-                        height: 100%;
+                        width: 100%;
                     }
                 }
             }
             .atoz {
-                width: 100%;
+                width: 1400px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -895,6 +913,83 @@
                     hr {
                         width: 95%;
                         height: 1px;
+                    }
+                }
+                .ds {
+                    width: 82%;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 13px;
+                    .sub {
+                        width: 17%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        height: 290px;     
+                        p {
+                            line-height: 1px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .ediv {
+                    width: 85%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    hr {
+                        width: 95%;
+                        height: 1px;
+                    }
+                }
+                .es {
+                    width: 82%;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 13px;
+                    .sub {
+                        width: 17%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        height: 270px;     
+                        p {
+                            line-height: 1px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .fdiv {
+                    width: 85%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    hr {
+                        width: 95%;
+                        height: 1px;
+                    }
+                }
+                .fs {
+                    width: 82%;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 13px;
+                    .sub {
+                        width: 17%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        height: 270px;     
+                        p {
+                            line-height: 1px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
                     }
                 }
             }
@@ -1057,6 +1152,8 @@
         .one-product {
             width: 100%;
             position: relative;
+            display: flex;
+            flex-direction: column;
             top: 140px;
             .upper-op {
                 width: 100%;
@@ -1064,10 +1161,8 @@
                 justify-content: space-around;
                 align-items: center;
                 position: relative;
-                height: 800px;
                 .image-op {
                     width: 65%;
-                    height: 500px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -1125,7 +1220,7 @@
                 width: 50%;
                 margin: 0 auto;
                 text-align: center;
-                margin-bottom: 40px;
+                margin-bottom: 100px;
                 p {
                     font-size: 20px;
                 }
@@ -1139,6 +1234,7 @@
             align-items: center;
             position: relative;
             top: 140px;
+            margin-bottom: 150px;
             .headers-sc {
                 display: flex;
                 width: 70%;
@@ -1584,6 +1680,64 @@
                 }
             }     
         }
+        .bottoms-up {
+            margin-top: 40px;
+            width: 100%;
+            background-color: #eee;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .bottoms-up-upper {
+                display: flex;
+                border-bottom: solid 1px #ccc;
+                padding: 40px;
+                line-height: 6px;
+                font-size: 13px;
+                .bu-left {
+                    width: 25%;
+                    .bl-up {
+                        margin-bottom: 30px;
+                    }
+                    .bl-mid {
+
+                    }
+                    .bl-down {
+                        .choosy {
+                            height: 30px;
+                            width: 140px;
+                            background-color: #eee;
+
+                        }
+                        .choosy:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .bu-mleft {
+                    width: 25%;
+                }
+                .bu-mright {
+                    width: 25%;
+                }
+                .bu-right {
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    .goin-places {
+                        display: flex;
+                        justify-content: flex-start;
+                        width: 100%;
+                        img {
+                            width: 40px;
+                            height: 40px;
+                            margin: 0 4px;
+                        }
+                    }
+                }
+            }
+        }
         .main-cong {
         }
     }
@@ -1609,6 +1763,12 @@
         height: 28vw !important;
     }
     .some-brands {
+        width: 100% !important;
+    }
+    .top-brands {
+        width: 100% !important;
+    }
+    .atoz {
         width: 100% !important;
     }
 
@@ -1655,9 +1815,15 @@
     .mtn-hom {
         display: initial !important;
     }
+    .banner-hom {
+        h3 {
+            font-size: 14px !important;
+        }
+        p {
+            font-size: 12px !important;
+        }
+    }
 
-    // .lower-nav {
-    //     display: none;
-    // }
+   
    
 }

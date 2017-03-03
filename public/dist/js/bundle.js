@@ -202,6 +202,16 @@ angular.module('bcApp').directive('carouselDir', function () {
 });
 'use strict';
 
+angular.module('bcApp').directive('bottomsUpDir', function () {
+
+    return {
+        restrict: 'EA',
+        templateUrl: './app/directives/bottoms-up/bottoms-up.html'
+
+    };
+});
+'use strict';
+
 angular.module('bcApp').directive('navbarDir', function () {
 
     return {

@@ -472,8 +472,7 @@
             opacity: .6;
             padding-left: 10px;
             line-height: 1px;
-            height: 80px;
-            padding-top: 10px; }
+            padding: 5px 0 5px 10px; }
         * body .main-hom .sales .item2 {
           height: 100%;
           width: 32%;
@@ -492,8 +491,7 @@
             opacity: .6;
             padding-left: 10px;
             line-height: 1px;
-            height: 80px;
-            padding-top: 10px; }
+            padding: 5px 0 5px 10px; }
         * body .main-hom .sales .item3 {
           height: 100%;
           width: 32%;
@@ -512,8 +510,7 @@
             opacity: .6;
             padding-left: 10px;
             line-height: 1px;
-            height: 80px;
-            padding-top: 10px; }
+            padding: 5px 0 5px 10px; }
       * body .main-hom .more-salez {
         display: flex;
         justify-content: space-between;
@@ -525,7 +522,7 @@
         * body .main-hom .more-salez .item1 {
           height: 100%;
           background: url("./../images/image (4).JPG");
-          width: 48%;
+          width: 49%;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
@@ -538,12 +535,11 @@
             opacity: .6;
             padding-left: 10px;
             line-height: 1px;
-            height: 80px;
-            padding-top: 10px; }
+            padding: 5px 0 5px 10px; }
         * body .main-hom .more-salez .item2 {
           height: 100%;
           background: url("./../images/image (7).JPG");
-          width: 48%;
+          width: 49%;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center center;
@@ -555,7 +551,7 @@
             color: white;
             opacity: .6;
             line-height: 1px;
-            padding: auto 0 auto 10px; }
+            padding: 5px 0 5px 10px; }
       * body .main-hom .last-salez {
         display: flex;
         justify-content: space-between;
@@ -570,14 +566,32 @@
           width: 60%;
           background-size: cover;
           background-repeat: no-repeat;
-          background-position: center center; }
+          background-position: center center;
+          display: flex;
+          align-items: flex-end; }
+          * body .main-hom .last-salez .item1 .banner-hom {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            opacity: .6;
+            line-height: 1px;
+            padding: 5px 0 5px 10px; }
         * body .main-hom .last-salez .item2 {
           height: 100%;
           background: url("./../images/image (6).JPG");
-          width: 36%;
+          width: 38%;
           background-size: cover;
           background-repeat: no-repeat;
-          background-position: center center; }
+          background-position: center center;
+          display: flex;
+          align-items: flex-end; }
+          * body .main-hom .last-salez .item2 .banner-hom {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            opacity: .6;
+            line-height: 1px;
+            padding: 5px 0 5px 10px; }
       * body .main-hom .bottom {
         width: 100%;
         height: 80px;
@@ -587,11 +601,13 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       font-family: abel;
       position: relative;
       top: 140px; }
       * body .allBrands .top {
         height: 350px;
+        width: 100%;
         background: url("./../images/brands.JPG");
         background-size: cover;
         background-repeat: no-repeat;
@@ -612,17 +628,17 @@
             margin: 0 6px; }
       * body .allBrands .top-brands {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         height: 6vh;
-        margin: 30px 0; }
+        width: 1400px;
+        margin: 50px 0; }
         * body .allBrands .top-brands .pic {
-          height: 100%;
-          margin: 0 55px; }
+          width: 6%; }
           * body .allBrands .top-brands .pic img {
-            height: 100%; }
+            width: 100%; }
       * body .allBrands .atoz {
-        width: 100%;
+        width: 1400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -727,6 +743,67 @@
           * body .allBrands .atoz .ddiv hr {
             width: 95%;
             height: 1px; }
+        * body .allBrands .atoz .ds {
+          width: 82%;
+          display: flex;
+          justify-content: space-around;
+          font-size: 13px; }
+          * body .allBrands .atoz .ds .sub {
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 290px; }
+            * body .allBrands .atoz .ds .sub p {
+              line-height: 1px; }
+              * body .allBrands .atoz .ds .sub p:hover {
+                cursor: pointer; }
+        * body .allBrands .atoz .ediv {
+          width: 85%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          * body .allBrands .atoz .ediv hr {
+            width: 95%;
+            height: 1px; }
+        * body .allBrands .atoz .es {
+          width: 82%;
+          display: flex;
+          justify-content: space-around;
+          font-size: 13px; }
+          * body .allBrands .atoz .es .sub {
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 270px; }
+            * body .allBrands .atoz .es .sub p {
+              line-height: 1px; }
+              * body .allBrands .atoz .es .sub p:hover {
+                cursor: pointer; }
+        * body .allBrands .atoz .fdiv {
+          width: 85%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          * body .allBrands .atoz .fdiv hr {
+            width: 95%;
+            height: 1px; }
+        * body .allBrands .atoz .fs {
+          width: 82%;
+          display: flex;
+          justify-content: space-around;
+          font-size: 13px; }
+          * body .allBrands .atoz .fs .sub {
+            width: 17%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 270px; }
+            * body .allBrands .atoz .fs .sub p {
+              line-height: 1px; }
+              * body .allBrands .atoz .fs .sub p:hover {
+                cursor: pointer; }
     * body .one-brand {
       width: 100%;
       display: flex;
@@ -858,17 +935,17 @@
     * body .one-product {
       width: 100%;
       position: relative;
+      display: flex;
+      flex-direction: column;
       top: 140px; }
       * body .one-product .upper-op {
         width: 100%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position: relative;
-        height: 800px; }
+        position: relative; }
         * body .one-product .upper-op .image-op {
           width: 65%;
-          height: 500px;
           display: flex;
           justify-content: center;
           align-items: center; }
@@ -912,7 +989,7 @@
         width: 50%;
         margin: 0 auto;
         text-align: center;
-        margin-bottom: 40px; }
+        margin-bottom: 100px; }
         * body .one-product .lower-op p {
           font-size: 20px; }
     * body .shopping-cart-sc {
@@ -922,7 +999,8 @@
       justify-content: space-around;
       align-items: center;
       position: relative;
-      top: 140px; }
+      top: 140px;
+      margin-bottom: 150px; }
       * body .shopping-cart-sc .headers-sc {
         display: flex;
         width: 70%;
@@ -1264,6 +1342,46 @@
           color: white; }
           * body .main-chk .thebots-chk .thebutts-chk:hover {
             cursor: pointer; }
+    * body .bottoms-up {
+      margin-top: 40px;
+      width: 100%;
+      background-color: #eee;
+      margin-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      * body .bottoms-up .bottoms-up-upper {
+        display: flex;
+        border-bottom: solid 1px #ccc;
+        padding: 40px;
+        line-height: 6px;
+        font-size: 13px; }
+        * body .bottoms-up .bottoms-up-upper .bu-left {
+          width: 25%; }
+          * body .bottoms-up .bottoms-up-upper .bu-left .bl-up {
+            margin-bottom: 30px; }
+          * body .bottoms-up .bottoms-up-upper .bu-left .bl-down .choosy {
+            height: 30px;
+            width: 140px;
+            background-color: #eee; }
+          * body .bottoms-up .bottoms-up-upper .bu-left .bl-down .choosy:focus {
+            outline: none; }
+        * body .bottoms-up .bottoms-up-upper .bu-mleft {
+          width: 25%; }
+        * body .bottoms-up .bottoms-up-upper .bu-mright {
+          width: 25%; }
+        * body .bottoms-up .bottoms-up-upper .bu-right {
+          width: 25%;
+          display: flex;
+          flex-direction: column; }
+          * body .bottoms-up .bottoms-up-upper .bu-right .goin-places {
+            display: flex;
+            justify-content: flex-start;
+            width: 100%; }
+            * body .bottoms-up .bottoms-up-upper .bu-right .goin-places img {
+              width: 40px;
+              height: 40px;
+              margin: 0 4px; }
 
 @media (max-width: 1400px) {
   .prods1-ob {
@@ -1280,6 +1398,10 @@
     width: 100% !important;
     height: 28vw !important; }
   .some-brands {
+    width: 100% !important; }
+  .top-brands {
+    width: 100% !important; }
+  .atoz {
     width: 100% !important; } }
 
 @media (max-width: 1000px) {
@@ -1310,6 +1432,10 @@
   .arch-hom {
     display: initial !important; }
   .mtn-hom {
-    display: initial !important; } }
+    display: initial !important; }
+  .banner-hom h3 {
+    font-size: 14px !important; }
+  .banner-hom p {
+    font-size: 12px !important; } }
 
 /*# sourceMappingURL=maps/styles.css.map */
