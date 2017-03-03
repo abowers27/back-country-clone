@@ -1,13 +1,14 @@
 <div class="nav-bar">
-   <div class="upper">
-       <img class='go-home' src="./images/image (3).PNG" ui-sref='home'>
-       <div class="search">
-           <form class="search-inner">
-               <button class="search-button"><img class='search-icon' src="./images/search.png" ></button>
-               <input class="search-query" placeholder="Search gear & clothing">
-           </form>
-       </div>
-       <div class="right">
+    <div class="upper">
+        <img class='go-home' src="./images/image (3).PNG" ui-sref='home'>
+        <img src="./images/image (4).PNG" id='hidden-navimg' alt="">
+        <div id='search-nav'>
+            <form class="search-inner">
+                <button class="search-button" ui-sref='searchProducts({search: searchterm})'><img class='search-icon' src="./images/search.png" ></button>
+                <input class="search-query" placeholder="Search gear & clothing" ng-model="searchterm">
+            </form>
+        </div>
+        <div class="right">
             <div class="chat">
                 <img class="chat-icon" src="./images/chat-icon.png">
                 <p>Chat</p>
@@ -16,18 +17,18 @@
                 <img class="phone" src="./images/phone-icon.png">
                 <p>1-800-409-4502</p>
             </div>
-            <div class="account">
-                <p>My Account</p>
-                <img src="./images/user-icon.png" alt="">
-            </div>
-            <div class="shopping-cart">
+                <div class="account">
+                    <a href="/auth" class="auth">My Account</a>
+                    <img src="./images/user-icon.png" alt="">
+                </div>
+            <div class="shopping-cart" ui-sref='shoppingCart'>
                 <img src="./images/shopping-cart.png" alt="">
             </div>
-       </div>
-   </div>
-   <div class="lower">
+        </div>
+    </div>
+    <div class="lower-nav">
         <div class="upper-lower">
-            <div class="dropdown-na">
+            <div class="dropdown-na dim">
                 <div class="na-btn">
                     <p>New Arrivals</p>
                 </div>
@@ -121,23 +122,48 @@
                     <p>Activities</p>    
                 </div>
                 <div class="activities">
-                    <div class="act-item">
+                    <div class="sub1-act">
+                        <div class="act-item one-act">
+                            <div class="blackground-act">
+                                <p>Ski</p>    
+                            </div> 
+                        </div>
+                        <div class="act-item two-act">
+                            <div class="blackground-act">
+                                <p>Snowboard</p>    
+                            </div>          
+                        </div>
+                        <div class="act-item three-act">
+                            <div class="blackground-act">
+                                <p>Hike & Camp</p>    
+                            </div>
+                        </div>
+                        <div class="act-item four-act">
+                            <div class="blackground-act">
+                                <p>Bike</p>    
+                            </div>
+                        </div>
+                        <div class="act-item five-act">
+                            <div class="blackground-act">
+                                <p>Climb</p>    
+                            </div>
+                        </div>
+                        <div class="act-item six-act">
+                            <div class="blackground-act">
+                                <p>Fitness</p>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-act">
                         
                     </div>
-                    <div class="act-item">
-                        
-                    </div>
-                    <div class="act-item">
-                        
-                    </div>
-                    <div class="act-item">
-                        
-                    </div>
-                    <div class="act-item">
-                        
-                    </div>
-                    <div class="act-item">
-                        
+                    <div class="sub2-act">
+                        <p>Fly Fish</p>
+                        <p>Run</p>
+                        <p>Paddle</p>
+                        <p>Surf</p>
+                        <p>Snowshoe</p>
+                        <p>Travel</p>
                     </div>
                 </div>
             </div>
@@ -239,10 +265,39 @@
                     </div>
                 </div>
             </div>
-            <!--<div class="lower-item">
-                <p>Kids</p>
+            <div class="dropdown-kid">
+                <div class="kid-btn">
+                    <p>Kids</p>
+                </div>
+                <div class="kids">
+                    <div class="kid-item">
+                        <h3>Boys</h3>
+                        <p>Outerwear</p>
+                        <p>Clothing</p>
+                        <p>Footwear</p>
+                    </div>
+                    <div class="kid-item">
+                        <h3>Girls</h3>
+                        <p>Outerwear</p>
+                        <p>Clothing</p>
+                        <p>Footwear</p>
+                    </div>
+                    <div class="kid-item">
+                        <h3>Toddlers & Infants</h3>
+                        <p>Outerwear</p>
+                        <p>Clothing</p>
+                        <p>Footwear</p>
+                    </div>
+                    <div class="kid-item">
+                        <h3>Accessories</h3>
+                        <p>Headwear</p>
+                        <p>Eyewear</p>
+                        <p>Gloves & Mittens</p>
+                        <p>Strollers & Joggers</p>
+                    </div>
+                </div>
             </div>
-            <div class="lower-item">
+            <!--<div class="lower-item">
                 <p>Sale</p>
             </div>-->
         </div>
@@ -251,3 +306,4 @@
         </div>
    </div>
 </div>
+

@@ -1,0 +1,51 @@
+<div class="shopping-cart-sc">
+    <div class="headers-sc">
+        <div class="item-sc">
+            <p>Item Description</p>
+        </div>
+        <div class="each-sc">
+            <p>Each</p>
+        </div>
+        <div class="quantity-sc">
+            <p>Quantity</p>
+        </div>
+        <div class="total-sc">
+            <p>Total</p>
+        </div>
+    </div>
+    <div ng-repeat="product in orderData.products" class="products-sc">
+        <div class="image-sc">
+            <img src="{{product.imageurl}}" alt="">
+        </div>
+        <div class="initial-info-sc">
+            <p>{{product.brand}} {{product.name}}</p>
+        </div>
+        <div class="remove-sc">
+            <p ng-click="deleteItem(product.id)">Remove</p>
+        </div>
+        <div class="price-sc">
+            {{product.price | currency}}
+           
+        </div>
+        <div class="qty-sc">
+            <input type="number" min="1" ng-model="product.qty" ng-change="getTotal()"> 
+        </div>
+        <div class="singtot-sc">
+            {{product.price * product.qty | currency}}
+        </div>
+    </div> 
+    <div class="checkout-sc">
+        <div class="fulltot-sc">
+            <h2>Total </h2>
+            <h3>{{total | currency}}</h3>    
+        </div>
+        <button class="proceed-sc" ui-sref='checkout({order: orderData.order.id})'>Proceed With Order  ></button>
+    </div>
+    
+</div>
+
+<script>
+    $('.proceed-sc').click(function() {
+        $('.nav-bar').css('display', 'none');
+    })
+</script>

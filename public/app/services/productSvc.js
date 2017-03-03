@@ -21,6 +21,13 @@ angular.module('bcApp')
         })
     }
 
+    this.searchQuery = function(searchterm) {
+        return $http.get('/api/search/' + searchterm)
+        .then(function(res) {
+            return res.data;
+        })
+    }
+
    
     
 })

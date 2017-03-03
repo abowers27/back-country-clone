@@ -1,0 +1,179 @@
+<div class="main-chk">
+    <div class="banner-chk">
+        <img src="./images/image (3).PNG" alt="" ui-sref='home'>
+    </div>
+    <div class="head-chk">
+        <h3>Review & Place Your Order</h3>
+        <p><span>Not {{checkoutInfo[0].email}}?</span> Sign Out</p>
+    </div>
+    <div class="step1-chk">
+        <p>1</p>
+        <p>Verify Your Payment Information</p>
+    </div>
+    <div class="promos-chk">
+        <p><span>Promo Code?</span> Click here to redeem</p>
+        <p><span>Gift Certificate?</span> Click here to redeem</p>
+    </div>
+    <div class="pmtinfo-chk">
+       <div class="crdt-chk stuff-chk">
+           <p>Credit Card</p>
+       </div>
+       <div class="num-chk stuff-chk">
+           <p>Card Number</p>
+           <input type="" name="" value="" ng-model="payment.card.number">
+       </div>
+       <div class="sec-chk stuff-chk">
+           <p>Card Security Code</p>
+           <input type="" name="" value="" ng-model="payment.card.cvc">
+           <p>What is this?</p>
+       </div>
+       <div class="exp-chk stuff-chk">
+           <p>Expiration</p>
+           <select ng-model="payment.card.exp_month">
+                <option value="01">01-Jan</option>
+                <option value="02">02-Feb</option>
+                <option value="03">03-Mar</option>
+                <option value="04">04-Apr</option>
+                <option value="05">05-May</option>
+                <option value="06">06-Jun</option>
+                <option value="07">07-Jul</option>
+                <option value="08">08-Aug</option>
+                <option value="09">09-Sep</option>
+                <option value="10">10-Oct</option>
+                <option value="11">11-Nov</option>
+                <option value="12">12-Dec</option>
+            </select>
+           <select ng-model="payment.card.exp_year">
+                <option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+            </select>
+       </div> 
+        <button type="" ng-click='charge(payment)'>Submit Your Order</button>   
+    </div>
+    <div class="step2-chk">
+        <p>2</p>
+        <p>Donation (Optional)</p>
+    </div>
+    <div class="don-chk">
+        <form action="">
+            <input type="checkbox" name="" value=""> Donate $1.00 to The Nature Conservancy? Learn more
+        </form>
+    </div>
+    <div class="step3-chk">
+        <p>3</p>
+        <p>Verify Your Billing And Shipping Address</p>
+    </div>
+    <div class="addr-chk">
+        <div class="bill-chk">
+            <p>Billing Address:</p>
+            <div class="item-chk">
+                <p>Name: </p>
+                <input type="" name="" value="">
+            </div>
+            <div class="item-chk">
+                <p>Street Address: </p>
+                <input type="" name="" value="">
+            </div>
+            <div class="item-chk">
+                <p>City, State, Zip: </p>
+                <input type="" name="" value="">
+            </div>
+           <div class="item-chk">
+                <p>Country: </p>
+                <input type="" name="" value="">
+            </div>
+
+        </div>
+        <div class="ship-chk">
+            <p>Shipping Address:</p>
+            <div class="item-chk">
+                <p>Name: </p>
+                <input type="" name="" value="">
+            </div>
+            <div class="item-chk">
+                <p>Street Address: </p>
+                <input type="" name="" value="">
+            </div>
+            <div class="item-chk">
+                <p>City, State, Zip: </p>
+                <input type="" name="" value="">
+            </div>
+           <div class="item-chk">
+                <p>Country: </p>
+                <input type="" name="" value="">
+            </div>
+        </div>
+    </div>
+    <div class="step4-chk">
+        <p>4</p>
+        <p>Pick A Shipping Option</p>
+    </div>
+    <div class="shipopt-chk">
+        <form action="">
+            <div class="shipitem-chk">
+                <input type="radio" name="ship" value=0> Economy (5-10 days) 
+                <p>Free!</p>    
+            </div>
+            <div class="shipitem-chk">
+                <input type="radio" name="ship" value=7.95> Standard (3-5 days)
+                <p>$7.95</p>
+            </div>
+            <div class="shipitem-chk">
+                <input type="radio" name="ship" value="Two"> Two Business Days
+            </div>
+            <div class="shipitem-chk">
+                <input type="radio" name="ship" value=29.95> Next Business Day
+                <p>$29.95</p>
+            </div>
+        </form>
+    </div>
+    <div class="step5-chk">
+        <p>5</p>
+        <p>Select Gift Options (Optional)</p>
+    </div>
+    <div class="gft-chk">
+        <form action="">
+            <input type="checkbox" name="" value=""> Is this a gift? We will ship the package without prices listed on the invoice.
+        </form>
+    </div>
+    <div class="step6-chk">
+        <p class="seis">6</p>
+        <p class="rev-chk">Review And Submit Your Order</p>
+        <p class="cada-chk">Each</p>
+        <p class="quantum-chk">Quantity</p>
+        <p>Total</p>
+    </div>
+    <div ng-repeat="product in checkoutInfo" class="prods-chk">
+        <div class="first-chk">
+            <img src="{{product.imageurl}}" alt="">
+            <p class="infos-chk">{{product.brand}} {{product.prod_name}}</p>
+        </div>
+        
+        <p class="eaches-chk">{{product.price | currency}}</p>
+        <p class="quant-chk">{{product.qty}}</p>
+        <p>{{product.price * product.qty | currency}}</p>
+    </div>
+    <div class="totes-chk">
+            <p>Total</p>
+            <p>{{total | currency}}</p>
+    </div>
+    <div class="thebots-chk">
+        <button class="thebutts-chk" type="" ng-click='charge(payment)'>Submit Your Order</button>
+    </div>
+    
+</div>
+
+<script>
+    $('.banner-chk').click(function() {
+        $('.nav-bar').css('display', 'initial');
+    })
+</script>

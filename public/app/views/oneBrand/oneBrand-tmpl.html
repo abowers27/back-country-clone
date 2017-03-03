@@ -9,53 +9,53 @@
         <hr>
     </div>
     <div class="main">
-        <div class="prods1">
-            <div class="best-sellers">
+        <div class="prods1-ob">
+            <div class="best-sellers-ob">
                 <h3>Best Sellers</h3>
                 <hr>
                 <p>Perennial Favorites From Every</p>
                 <p>Category</p>
                 <button class="best-btn">Shop All Best Sellers</button>
             </div>
-            <div class="item" ui-sref='oneProduct({id: brand[0].productid})'>
+            <div class="item-ob" ui-sref='oneProduct({id: brand[0].productid})'>
                 <img src="{{brand[0].imageurl}}" >
                 <h4>{{brand[0].brand}}</h4>
                 <p>{{brand[0].name}}</p>
                 <h4>{{brand[0].price | currency}}</h4>
             </div>
-            <div class="item" ui-sref='oneProduct({id: brand[1].productid})'>
+            <div class="item-ob" ui-sref='oneProduct({id: brand[1].productid})'>
                 <img src="{{brand[1].imageurl}}" >
                 <h4>{{brand[1].brand}}</h4>
                 <p>{{brand[1].name}}</p>
                 <h4>{{brand[1].price | currency}}</h4>
             </div>
-            <div class="item" ui-sref='oneProduct({id: brand[2].productid})'>
+            <div class="item-ob" ui-sref='oneProduct({id: brand[2].productid})'>
                 <img src="{{brand[2].imageurl}}" >
                 <h4>{{brand[2].brand}}</h4>
                 <p>{{brand[2].name}}</p>
                 <h4>{{brand[2].price | currency}}</h4>
             </div>
         </div>
-        <div class="prods2">
-            <div class="item" ui-sref='oneProduct({id: brand[3].productid})'>
+        <div class="prods2-ob">
+            <div class="item-ob" ui-sref='oneProduct({id: brand[3].productid})'>
                 <img src="{{brand[3].imageurl}}" >
                 <h4>{{brand[3].brand}}</h4>
                 <p>{{brand[3].name}}</p>
                 <h4>{{brand[3].price | currency}}</h4>
             </div>
-            <div class="item" ui-sref='oneProduct({id: brand[4].productid})'>
+            <div class="item-ob" ui-sref='oneProduct({id: brand[4].productid})'>
                 <img src="{{brand[4].imageurl}}" >
                 <h4>{{brand[4].brand}}</h4>
                 <p>{{brand[4].name}}</p>
                 <h4>{{brand[4].price | currency}}</h4>
             </div>
-            <div class="item" ui-sref='oneProduct({id: brand[5].productid})'>
+            <div class="item-ob" ui-sref='oneProduct({id: brand[5].productid})'>
                 <img src="{{brand[5].imageurl}}" >
                 <h4>{{brand[5].brand}}</h4>
                 <p>{{brand[5].name}}</p>
                 <h4>{{brand[5].price | currency}}</h4>
             </div>
-            <div class="item">
+            <div class="item-ob" ui-sref='oneProduct({id: brand[6].productid})'>
                 <img src="{{brand[6].imageurl}}" >
                 <h4>{{brand[6].brand}}</h4>
                 <p>{{brand[6].name}}</p>
@@ -71,16 +71,18 @@
 </div>
 
 <script>
-    $('.item').mouseover(function() {
+    $('.item-ob').mouseover(function() {
         $(this).css('height', '400px')
         $(this).css('width', '26%')
         $(this).css('border', '1px solid #bbb')
         $(this).css('z-index', '10')
     })
-     $('.item').mouseleave(function() {
-        $(this).css('height', '300px')
+     $('.item-ob').mouseleave(function() {
+        $(this).css('height', '340px')
         $(this).css('width', '23%')
         $(this).css('border', 'none')
         $(this).css('z-index', '9')
     })
+
+  
 </script>

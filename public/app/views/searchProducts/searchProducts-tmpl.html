@@ -1,0 +1,15 @@
+<div class="main-srch">
+    <div class="upper-srch">
+        <p>Showing results for</p>
+        <h3>"{{srch}}"</h3>
+    </div>
+    <div class="mid-srch">
+        <div class="items-srch" ng-repeat='item in searchItems' ui-sref='oneProduct({id: item.productid})'>
+            <img src="{{item.imageurl}}" alt="">
+            <p>{{item.brand}}</p>
+            <p>{{item.name}}</p>
+            <p>{{item.price | currency}}</p>
+        </div>
+    </div>
+    
+</div>

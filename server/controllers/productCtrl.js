@@ -34,6 +34,17 @@ module.exports = {
                 res.send(results[0])
             }
         })
+    },
+    getSearchQuery: function(req, res) {
+        db.product.search_product(['%' + req.params.searchTerm + '%'],
+        function(err, results) {
+            if (err) {
+                console.error(err)
+                res.send(err)
+            } else {
+                res.send(results)
+            }
+        })
     }
 
 }

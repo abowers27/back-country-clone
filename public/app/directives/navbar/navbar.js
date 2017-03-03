@@ -16,8 +16,15 @@ angular.module('bcApp')
             }
             lastScrollTop = st;
         })
+
+        $('.dim').hover(function() {
+            $('.get-dim').fadeIn(200);
+
+        }, function() {
+            $('.get-dim').fadeOut(200);
+        });
        
-        }
+    }
     }
 
 })

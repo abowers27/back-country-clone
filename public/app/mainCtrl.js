@@ -1,5 +1,5 @@
 angular.module('bcApp')
-.controller('mainCtrl', function($scope, productSvc) {
+.controller('mainCtrl', function($scope, productSvc, authSvc) {
 
     $scope.getProducts = function(){
         productSvc.getProducts().then(function(res) {
@@ -8,5 +8,8 @@ angular.module('bcApp')
         })
     }
     $scope.getProducts();
+
+   
+    
     
 })

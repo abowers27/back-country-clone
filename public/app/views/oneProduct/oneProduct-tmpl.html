@@ -8,8 +8,12 @@
             <h2>{{oneProduct.brand}} {{oneProduct.name}}</h2>
             <h3>{{oneProduct.price | currency}}</h3>
             <p>Free 2-Day shipping on orders over $50*</p>
-            <div class="quantity-op">Quantity: <input type="number" placeholder="1" min="1" ng-model="qty"></div>
-            <button class="cart-op" type="button" name="button" ng-click="addToCart(product.id, qty)">Add To Cart</button>
+            <div class="quantity-op">Quantity: <input type="number" min="1" ng-model="qty"></div>
+            <button class="cart-op" type="button" name="button" ng-click="addToCart(oneProduct.productid, qty)">Add To Cart</button>
         </div>
+    </div>
+    <div class="lower-op">
+        <h2>{{oneProduct.tagline}}</h2>
+        <p>{{oneProduct.description}}</p>
     </div>
 </div>
