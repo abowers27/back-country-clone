@@ -1002,6 +1002,25 @@
                         height: 1px;
                     }
                 }
+                .gs {
+                    width: 82%;
+                    display: flex;
+                    justify-content: space-around;
+                    font-size: 13px;
+                    .sub {
+                        width: 17%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        height: 270px;     
+                        p {
+                            line-height: 1px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
             }
         }
         .one-brand {
